@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "api/predict.py", "use": "@vercel/python" }
+  ],
+  "routes": [
+    { "src": "/predict", "methods": ["POST"], "dest": "api/predict.py" }
+  ]
+}
